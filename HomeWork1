@@ -1,0 +1,203 @@
+import UIKit
+
+let greeting = "Hello, USA"
+print(greeting)
+
+let startPoint = "Chelyabinsk, Russia"
+
+var quantityOfPersons = 2
+var ticketPricePersonUSD = 715
+var distanceToLA: Int = 10095
+var totalTicketPrice = quantityOfPersons * ticketPricePersonUSD
+var isPlaneToLA = true
+
+print("""
+Finally we are going to California.
+Our trip begins in \(startPoint).
+Tickets cost \(totalTicketPrice)$ for two persons.
+Distance is \(distanceToLA)km.
+
+""")
+
+var cityLA = "Los Angeles"
+
+let populationOfLA = 3884307
+var rentCarDayUSD = 40
+var gasConsumprionLitre: Float = 10
+var gasCostUSD: Float = 1.3
+var hotelLA = 100
+var foodForOnePersonLA = 50
+var daysInLA = 2
+let distanceInLA: Float = 50
+
+var totalGasLA = distanceInLA / 100 * gasConsumprionLitre * gasCostUSD
+var totalHotelLA = hotelLA * daysInLA
+var totalFoodLA = quantityOfPersons * foodForOnePersonLA * daysInLA
+var rentCarLA = rentCarDayUSD * daysInLA
+
+let taleOfLA = """
+Our first point of stay is \(cityLA).
+Population of this city is \(populationOfLA) people.
+We spend \(totalHotelLA)$ for living in a Hotel, \(totalFoodLA)$ on food,
+rent a car is \(rentCarLA)$, gasoline - \(totalGasLA)$.
+
+"""
+
+print (taleOfLA)
+
+var citySanLO = "San Luis Obispo"
+
+let distanceToCitySanLO = 350
+let populationOfCitySanLO = 47302
+var quantityOfDaysCitySanLO = 1
+var hotelSanLO = 70
+var foodForOnePersonSanLO = 30
+var daysInSanLO = 1
+
+var totalGasSanLO = Float(distanceToCitySanLO) / 100 * gasConsumprionLitre * gasCostUSD
+var totalHotelSanLO = hotelSanLO * daysInSanLO
+var totalFoodSanLO = quantityOfPersons * foodForOnePersonSanLO * daysInSanLO
+var rentCarSanLO = rentCarDayUSD * daysInSanLO
+
+print("""
+Next stop is \(citySanLO) in \(distanceToCitySanLO)km from \(cityLA).
+Population is \(populationOfCitySanLO) people.
+Our expenses:
+\(totalHotelSanLO)$ on a hotel.
+\(totalGasSanLO)$ on gasoline and \(rentCarSanLO)$ on car rent.
+\(totalFoodSanLO)$ on food.
+
+""")
+
+var cityMonterey = "Monterey"
+
+let distanceToMonterey = 240
+let populationOfMonterey = 28352
+var daysInMonterey = 1
+var hotelMonterey = 80
+var foodForOnePersonMonterey = 40
+
+
+var totalGasMonterey = Float(distanceToMonterey) / 100 * gasConsumprionLitre * gasCostUSD
+var totalHotelMonterey = hotelMonterey * daysInMonterey
+var totalFoodMonterey = quantityOfPersons * foodForOnePersonMonterey * daysInMonterey
+var rentCarMonterey = rentCarDayUSD * daysInMonterey
+
+print("""
+Then we are going to \(cityMonterey). That is \(distanceToMonterey)km further.
+Another small town with population of \(populationOfMonterey) people.
+Our expenses:
+\(totalHotelMonterey)$ on hotel.
+\(totalGasMonterey)$ on gasoline and \(rentCarMonterey)$ on car rent.
+\(totalFoodMonterey)$ on food.
+
+""")
+
+var citySanFr = "San Francisco"
+
+let distanceToSanFr = 190
+let populationOfSanFr = 879961
+var daysInSanFr = 2
+var hotelSanFr = 120
+var foodForOnePersonSanFr = 60
+
+var totalGasSanFr = Float(distanceToSanFr) / 100 * gasConsumprionLitre * gasCostUSD
+var totalHotelSanFr = hotelSanFr * daysInSanFr
+var totalFoodSanFr = quantityOfPersons * foodForOnePersonSanFr * daysInSanFr
+var rentCarSanFr = rentCarDayUSD * daysInSanFr
+
+print("""
+In \(distanceToSanFr)km more further is our next stop - \(citySanFr).
+This is a big city with population of \(populationOfSanFr) people.
+This is an expensive city. There we expect to spend:
+\(totalHotelSanFr)$ on a hotel.
+\(totalGasSanFr)$ on gasoline and \(rentCarSanFr)$ on car rent.
+\(totalFoodSanFr)$ on food.
+
+""")
+
+
+var tahoe = "Tahoe lake"
+
+let distanceToTahoe = 326
+var daysInTahoe = 1
+var hotelTahoe = 100
+var foodForOnePersonTahoe = 40
+
+var totalGasTahoe = Float(distanceToTahoe) / 100 * gasConsumprionLitre * gasCostUSD
+var totalHotelTahoe = hotelTahoe * daysInTahoe
+var totalFoodTahoe = quantityOfPersons * foodForOnePersonTahoe * daysInTahoe
+var rentCarTahoe = rentCarDayUSD * daysInTahoe
+
+print("""
+Next stop is \(tahoe). It is in \(distanceToTahoe)km from \(citySanFr).
+There we expect to spend:
+\(totalHotelTahoe)$ on a hotel.
+\(totalGasTahoe)$ on gasoline and \(rentCarTahoe)$ on car rent.
+\(totalFoodTahoe)$ on food.
+
+""")
+
+var yose = "Yosemite national park"
+
+let distanceToYose = 260
+var daysInYose = 1
+var foodForOnePersonYose = 40
+
+var totalGasYose = Float(distanceToYose) / 100 * gasConsumprionLitre * gasCostUSD
+var totalFoodYose = quantityOfPersons * foodForOnePersonYose * daysInYose
+var rentCarYose = rentCarDayUSD * daysInYose
+
+print("""
+Then we are going to visit \(yose). We are going drive \(distanceToYose)km on highway
+to visit this park.
+We are planning to spend \(totalGasYose)$ on gas and \(totalFoodYose).
+Car rent is the same as usual \(rentCarYose)$ a day.
+We decide not to stay in hotel and move to next point.
+
+""")
+
+var fresno = "Fresno"
+
+let distanceToFresno = 150
+var populationOfFresno = 525010
+var daysInFresno = 1
+var hotelFresno = 80
+var foodForOnePersonFresno = 40
+
+var totalGasFresno = Float(distanceToFresno) / 100 * gasConsumprionLitre * gasCostUSD
+var totalFoodFresno = quantityOfPersons * foodForOnePersonFresno * daysInFresno
+var rentCarFresno = rentCarDayUSD * daysInFresno
+var totalHotelFresno = hotelFresno * daysInFresno
+
+print ("""
+Next city is \(fresno). It is \(distanceToFresno)km from \(yose).
+Population is \(populationOfFresno) people.
+Our expenses:
+\(totalGasFresno)$ on gas.
+\(totalFoodFresno)$ on food.
+\(totalHotelFresno)$ on a hotel.
+
+""")
+
+var totalGasTrip = totalGasLA + totalGasYose + totalGasFresno + totalGasTahoe + totalGasSanFr + totalGasMonterey + totalGasSanLO
+var totalHotel = totalHotelFresno + totalHotelTahoe + totalHotelSanFr + totalHotelLA + totalHotelMonterey + totalHotelSanLO
+var totalFood = totalFoodYose + totalFoodFresno + totalFoodTahoe + totalFoodSanFr + totalHotelLA + totalFoodMonterey + totalFoodSanLO
+var totalRent = rentCarYose + rentCarTahoe + rentCarLA + rentCarMonterey + rentCarSanFr + rentCarSanLO + rentCarFresno
+var totalDistanceUSA = distanceToFresno + distanceToYose + distanceToTahoe + daysInLA + distanceToMonterey + distanceToSanFr + distanceToCitySanLO
+var totalDays = daysInLA + daysInFresno + daysInTahoe + daysInMonterey + daysInSanFr + daysInSanLO + daysInYose
+let averageSpeed = 90
+var totalTimeOnHighway = (totalDistanceUSA) / averageSpeed
+var totalExpenses = totalRent + totalFood + totalHotel + Int(totalGasTrip) + totalTicketPrice
+
+print ("""
+At this point during \(totalDays) days of our trip and \(totalDistanceUSA)km
+of driving on a car we expect to spend :
+On tickets          - \(totalTicketPrice)$
+On gasoline         - \(totalGasTrip)$
+On living in hotels - \(totalHotel)$
+On food             - \(totalFood)$
+On renting a car    - \(totalRent)$
+
+Total expenses is   - \(totalExpenses)$
+""")
